@@ -41,13 +41,14 @@ for (const [key, value] of Object.entries(product)) {
   console.log(key, value);
   const html = `
         <div class="card">
+        <h1 class="discount">20% off</h1>
         <img
           src="${value}"
           alt="" />
         <span class="card-content">
           <span>
             <p>Mala-${key}</p>
-            <p>$40.00</p>
+            <p><p class="cut--price">&#8377; 120.00</p> &#8377; 75.00</p>
           </span>
           <a href="../index.html#section--5"><button class="contactBtn productCheck">Check</button></a>
         </span>
