@@ -808,6 +808,11 @@ footer > img {
   .page1--content h1 {
     font-size: 22px;
   }
+  .crisp-client .cc-tlyw[data-full-view="true"] .cc-kxkl .cc-nsge .cc-imbb {
+    position: fixed !important;
+    bottom: 24px !important;
+    right: 14px !important;
+  }
 }
 @media screen and (max-width: 450px) {
   .footer-content .footer--heading-area {

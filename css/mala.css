@@ -22,7 +22,6 @@ body {
 .discount {
   position: absolute;
   left: 0;
-  transform: translateX(49%);
 }
 @media screen and (max-width: 1150px) {
   .card img {
