@@ -38,7 +38,6 @@ const product = {
 
 let i = "";
 for (const [key, value] of Object.entries(product)) {
-  console.log(key, value);
   const html = `
         <div class="card">
         <h1 class="discount">20% off</h1>

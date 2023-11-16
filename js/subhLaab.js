@@ -1,3 +1,20 @@
+const productCloseBtn = document.querySelector(".product--model-closeBtn");
+const productModel = document.querySelector(".product--model");
+const productCard = document.querySelectorAll(".card img");
+console.log(productCard);
+productCard.forEach((elem) => {
+  elem.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log("CLICKED");
+    productModel.style.display = "flex";
+  });
+});
+
+productCloseBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  productModel.style.display = "none";
+});
+
 function modelOC() {
   const modelWindow = document.querySelector(".modelWindow");
   const overlay = document.querySelector(".overlay");
@@ -40,7 +57,7 @@ let i = "";
 for (const [key, value] of Object.entries(product)) {
   console.log(key, value);
   const html = `
-        <div class="card">
+        <div class="card subh--card">
         <h1 class="discount">20% off</h1>
         <img
           src="${value}"
@@ -50,7 +67,7 @@ for (const [key, value] of Object.entries(product)) {
             <p>SubhLaab-${key}</p>
             <p><p class="cut--price">&#8377; 120.00</p> &#8377; 75.00</p>
           </span>
-          <a href="../index.html#section--5"><button class="contactBtn productCheck">Check</button></a>
+          <a href="#"><button class="contactBtn productCheck">Check</button></a>
         </span>
       </div>
         `;

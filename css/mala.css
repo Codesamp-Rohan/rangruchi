@@ -3,7 +3,7 @@ body {
 }
 .productHeading {
   font-size: 4vw;
-  padding-inline: 50px;
+  padding-inline: 20px;
   font-weight: 100 !important;
 }
 .product--area {
@@ -14,6 +14,8 @@ body {
 }
 .card {
   align-items: center;
+  z-index: 100;
+  position: relative;
 }
 .card img {
   width: 300px;
@@ -27,6 +29,9 @@ body {
   .card img {
     width: 240px;
     height: 240px;
+  }
+  .productHeading {
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 975px) {
@@ -58,10 +63,36 @@ body {
     width: 300px;
     height: 300px;
   }
+  .productHeading {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 450px) {
   .card img {
     width: 230px;
     height: 230px;
   }
+}
+
+.product--model {
+  width: 80vw;
+  height: 80vh;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  display: flex;
+  position: none;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  padding: 50px;
+}
+.product--model .image--area {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.product--model .image--area img {
+  object-fit: contain;
 }

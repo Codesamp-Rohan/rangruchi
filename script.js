@@ -39,7 +39,7 @@ function modelOC() {
   });
 }
 function sendMsgOnWhatsapp() {
-  document.querySelector("#footerBtn").addEventListener("click", function (e) {
+  document.getElementById("footerBtn").addEventListener("click", function (e) {
     e.preventDefault();
     var phoneNumber = "8420503040"; // Replace with the target phone number
     var name = document.querySelector("#name").value;
