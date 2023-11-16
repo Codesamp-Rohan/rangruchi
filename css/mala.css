@@ -12,6 +12,12 @@ body {
   grid-template-rows: repeat(4, auto);
   margin: 30px;
 }
+.navbar--mobile-section {
+  z-index: 999;
+}
+nav {
+  z-index: 900 !important;
+}
 .card {
   align-items: center;
   z-index: 100;
@@ -66,6 +72,22 @@ body {
   .productHeading {
     font-size: 50px;
   }
+  .product--model .image--area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product--model .image--area img {
+    width: 85% !important;
+    object-fit: contain;
+  }
+  .product--model-closeBtn {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+  }
+  .product--model {
+    width: 95vw !important;
+  }
 }
 @media screen and (max-width: 450px) {
   .card img {
@@ -79,8 +101,8 @@ body {
   height: 80vh;
   background-color: transparent;
   backdrop-filter: blur(10px);
-  display: flex;
-  position: none;
+  display: none;
+  position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
@@ -94,5 +116,9 @@ body {
   justify-content: space-around;
 }
 .product--model .image--area img {
+  width: 45%;
   object-fit: contain;
+}
+.closeBtn {
+  cursor: pointer;
 }
