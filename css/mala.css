@@ -31,6 +31,15 @@ nav {
   position: absolute;
   left: 0;
 }
+.image--area-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  padding: 14px 30px;
+  border: 1px solid;
+  background-color: transparent;
+}
 @media screen and (max-width: 1150px) {
   .card img {
     width: 240px;
@@ -97,13 +106,13 @@ nav {
 }
 
 .product--model {
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background-color: transparent;
   backdrop-filter: blur(10px);
   display: none;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

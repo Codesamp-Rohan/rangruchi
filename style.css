@@ -398,7 +398,7 @@ nav {
 }
 .card:hover img {
   scale: 1.02;
-  border-radius: 0%;
+  border-radius: 10px;
 }
 .collection--anker {
   display: flex;

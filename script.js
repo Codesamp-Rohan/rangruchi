@@ -38,22 +38,6 @@ function modelOC() {
     overlay.classList.remove("active");
   });
 }
-function sendMsgOnWhatsapp() {
-  document.getElementById("footerBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-    var phoneNumber = "8420503040"; // Replace with the target phone number
-    var name = document.querySelector("#name").value;
-    var mail = document.querySelector("#email").value;
-    var message = document.querySelector("#message").value; // Replace with the message you want to send
-
-    var customMsg = "Hey there, I am " + name + ".\n" + message;
-
-    var whatsappURL =
-      "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(customMsg);
-
-    window.open(whatsappURL, "_blank");
-  });
-}
 function slider() {
   const slides = document.querySelectorAll(".slide");
   const slider = document.querySelector(".slider");
@@ -153,36 +137,31 @@ function modelColor() {
     }
   });
 }
+function sendMsgOnWhatsapp() {
+  document.querySelector(".footerBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    var phoneNumber = "8420503040"; // Replace with the target phone number
+    var name = document.querySelector("#name").value;
+    var email = document.querySelector("#email").value;
+    var message = document.querySelector("#message").value; // Replace with the message you want to send
+
+    // Validate input fields
+    if (!name || !email || !message) {
+      alert("Please fill out all fields before sending the message.");
+      return;
+    }
+
+    var customMsg = "Hey there, I am " + name + ".\n" + message;
+
+    var whatsappURL =
+      "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(customMsg);
+
+    window.open(whatsappURL, "_blank");
+  });
+}
 modelOC();
 sendMsgOnWhatsapp();
 slider();
 lazyLoad();
 menuResponse();
 modelColor();
-// function cursorHover() {
-//   window.addEventListener("mousemove", function (e) {
-//     cursor.animate(
-//       {
-//         left: e.pageX + "px",
-//         top: e.pageY + "px",
-//       },
-//       { duration: 600, fill: "forwards" }
-//     );
-//   });
-//   anker.forEach((e) => {
-//     e.addEventListener("mouseenter", function (elem) {
-//       cursor.style.opacity = "0.1";
-//     });
-//     e.addEventListener("mouseleave", function (elem) {
-//       cursor.style.opacity = "1";
-//     });
-//   });
-//   page2.addEventListener("mouseenter", function () {
-//     cursor.style.scale = "0";
-//   });
-//   page2.addEventListener("mouseleave", function () {
-//     cursor.style.scale = "1";
-//   });
-// }
-// cursorHover();
-// navEffect();
