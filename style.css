@@ -255,9 +255,9 @@ nav {
   font-size: 18px;
   color: white;
   width: 45%;
-  bottom: 10%;
+  top: 50%;
   left: 6%;
-  transform: translate(-6%, 0%);
+  transform: translate(-6%, -50%);
   text-transform: uppercase;
 }
 .specialBtn {
