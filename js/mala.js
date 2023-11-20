@@ -72,7 +72,7 @@ for (const [key, value] of Object.entries(product)) {
   const html = `
     <div class="card subh--card" data-product-key="${key}">
       <h1 class="discount">20% off</h1>
-      <img loading="lazy" src="${value[0]}" alt="" />
+      <img src="${value[0]}" alt="" />
       <span class="card-content">
         <span>
           <p>SubhLaab-${key}</p>
