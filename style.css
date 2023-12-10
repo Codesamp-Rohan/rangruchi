@@ -445,7 +445,20 @@ nav {
   transition: transform 1s;
   background-color: var(--primary);
 }
-
+.productCheck {
+  background-color: transparent;
+  padding: 14px 30px;
+  border: 0.4px solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: lvmh;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.productCheck:hover {
+  background-color: var(--button);
+  color: var(--white);
+}
 .slide > img {
   /* Only for images that have different size than slide */
   width: 100%;

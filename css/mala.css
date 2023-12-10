@@ -59,13 +59,15 @@ nav {
   .product--model .image--area {
     flex-direction: column;
     align-items: center;
+    justify-content: center !important;
   }
   .product--model .image--area img {
-    width: 80% !important;
-    height: 20vh;
+    width: 100% !important;
+    height: 40vh;
     object-fit: contain !important;
   }
   .product--model .image--area img:nth-child(1) {
+    width: 100% !important;
     height: 40vh !important;
     object-fit: cover !important;
   }
@@ -107,7 +109,7 @@ nav {
     align-items: center;
   }
   .product--model .image--area img {
-    width: 85% !important;
+    width: 100% !important;
     object-fit: contain;
   }
   .product--model-closeBtn {
